@@ -10,7 +10,7 @@ a {
 /* public/stylesheet/style.css */
 
 .container {
-  width: 30%;
+  /* width: 30%; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ input {
 
 form {
   margin: 30px auto;
-  width: 380px;
+  /* width: 380px; */
 }
 
 #form label {
