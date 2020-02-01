@@ -11,7 +11,8 @@ const userSchema = new Schema({
   countryOfInterest: String,
   topicsOfInterest: String,
   topicsOfExpertise: String,
-  profilePic: String
+  profilePic: String,
+  description: String
 });
 
 const User = mongoose.model('User', userSchema);
