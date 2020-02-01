@@ -23,7 +23,7 @@ router.use('/signup', signupRouter);
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Authentication Page'});
+  res.render('index');
 });
 
 module.exports = router;
