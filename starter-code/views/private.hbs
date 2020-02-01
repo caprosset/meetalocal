@@ -1,4 +1,4 @@
-<h1>Matching users</h1>
+<h1>Connect</h1>
 <p>See my <a href="/main">profile</a></p>
 <p><a href="/logout">Logout</a></p>
 
@@ -9,10 +9,11 @@
   <div class="card" style="width: 18rem;">
     <img src="{{this.profilePic}}" class="card-img-top" alt="">
     <div class="card-body">
-      <h5 class="card-title"></h5>
-      <p class="card-text">  {{this.name}}</p>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">{{this.name}} {{this.surname}}</h5>
+      <p class="card-text">Country of origin: {{this.countryOfOrigin}}</p>
+      <p class="card-text">Topics of interest: {{this.topicsOfInterest}}</p>
+      <p class="card-text">Topics of expertise: {{this.topicsOfExpertise}}</p>
+      <a href="#" class="btn btn-primary">Contact him</a>
     </div>
   </div>
   {{/ifeq}}

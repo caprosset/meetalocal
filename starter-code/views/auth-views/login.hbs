@@ -1,19 +1,19 @@
 <div class="container">
   <h1>Login</h1>
 
-  <form action='/auth/login' method='POST'>
+  <form action='/auth/login' method='POST' class="form-group">
 
     <div class="inputs">
       <label for=''>Username</label>
-      <input type='text' name='username'required>
+      <input type='text' name='username'  class="form-control" required>
     </div>
 
     <div class="inputs">
       <label for=''>Password</label>
-      <input type='password' name='password'required>
+      <input type='password' name='password'  class="form-control" required>
     </div>
 
-    <button type='submit'>LOGIN</button>
+    <button type='submit'  class="btn btn-primary">LOGIN</button>
 
     <p class="account-message">
       Don't have an account? <a href="/signup">Sign up</a>
