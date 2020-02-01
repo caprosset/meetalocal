@@ -2,9 +2,9 @@
 
   <h1>Sign Up</h1>
 
-  <form action='/auth/signup' method='POST'>
+  <form action='/auth/signup' method='POST' class="form-group">
 
-    <div class="inputs">
+    <div class="inputs" class="form-control">
       <label for=''>Username</label>
       <input type='text' name='username' required>
     </div>
@@ -81,9 +81,9 @@
       <textarea name="description" cols="40" rows="5" required>Enter text here...</textarea>
     </div>
 
-    <button type='submit'>Submit</button>
+    <button type='submit' class="btn match-btn">Submit</button>
 
-    <p class="account-message">
+    <p class="account-message text-center">
       Already have an account? <a href="/login">Login</a>
     </p>
   </form>

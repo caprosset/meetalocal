@@ -30,7 +30,7 @@ input {
 }
 
 form {
-  margin: 30px auto;
+  /* margin: 30px auto; */
   /* width: 380px; */
 }
 
@@ -47,7 +47,7 @@ form {
   color: white;
   margin-top: 15px;
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 #form input,
@@ -88,4 +88,16 @@ button:hover {
   margin: 20px auto;
   padding: 20px;
   width: 100%;
+}
+
+.form-group {
+  margin-top: 40px;
+}
+
+.account-message {
+  margin-top: 10px;
+}
+
+.card {
+  margin-bottom: 20px;
 }
