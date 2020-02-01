@@ -14,6 +14,57 @@
       <input type='password' name='password' minlength='4' required>
     </div>
 
+    <div class="inputs">
+      <label for=''>Name</label>
+      <input type='text' name='name' required>
+    </div>
+
+    <div class="inputs">
+      <label for=''>Last Name</label>
+      <input type='text' name='surname' required>
+    </div>
+
+    <div class="inputs">
+      <label for=''>Country of origin</label>
+      <input type='text' name='countryOfOrigin' required>
+    </div>
+
+    <div class="inputs">
+      <label for=''>Age</label>
+      <input type='number' name='age' required>
+    </div>
+
+    <div class="inputs">
+      <label for=''>Profession</label>
+      <input type='text' name='profession' required>
+    </div>
+
+    <div class="inputs">
+      <label for=''>Country of interest</label>
+      <input type='text' name='countryOfInterest' required>
+    </div>
+
+    <div class="inputs">
+      <label for=''>Topic of interest</label>
+      <input type='text' name='topicsOfInterest' required>
+    </div>
+
+     <div class="inputs">
+      <label for=''>Topic of expertise</label>
+      <input type='text' name='topicsOfExpertise' required>
+    </div>
+
+      <div class="inputs">
+      <label for=''>Upload pic</label>
+      <input type='text' name='profilePic' required>
+    </div>
+
+     <div class="inputs">
+      <label for=''>Description</label>
+      <input type='text' name='description' required>
+    </div>
+
+
     <button type='submit'>Submit</button>
 
     <p class="account-message">
@@ -23,12 +74,12 @@
 
 
 
-  {{!-- error message display --}} 
+  {{!-- error message display --}}
 
   <div class="error">
-  {{#if errorMessage}}
+    {{#if errorMessage}}
     <div class="error-message">{{ errorMessage }}</div>
-  {{/if}}
+    {{/if}}
   </div>
 
 </div>
