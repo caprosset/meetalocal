@@ -13,7 +13,7 @@ users = [
     countryOfInterest: 'Gambia',
     topicsOfInterest: 'Travel tips',
     topicsOfExpertise: 'Technology',
-    profilePic: String, 
+    profilePic: '', 
     description: 'I am traveling to Nigeria in April 2020'
   },
   { 
@@ -27,7 +27,7 @@ users = [
     countryOfInterest: 'Senegal',
     topicsOfInterest: 'Travel tips',
     topicsOfExpertise: 'Professional',
-    profilePic: String, 
+    profilePic: '', 
     description: 'I am traveling to Venezuela this year'
   },
   { 
@@ -41,12 +41,12 @@ users = [
     countryOfInterest: 'Taiwan',
     topicsOfInterest: 'Food',
     topicsOfExpertise: 'Professional',
-    profilePic: String, 
+    profilePic: '', 
     description: ''
   },
   { 
     username: 'nuria',
-    password: String,
+    password: '123',
     name: 'Nuria',
     surname: 'Lopez',
     countryOfOrigin: 'Spain',
@@ -60,7 +60,7 @@ users = [
   },
   { 
     username: 'capucine',
-    password: String,
+    password: '123',
     name: 'Capucine',
     surname: 'Rosset',
     countryOfOrigin: 'France',
@@ -136,7 +136,6 @@ mongoose.connect('mongodb://localhost:27017/basic-auth-lab', { useNewUrlParser: 
     })
     .then( usersDocuments => {
       console.log('Created users', usersDocuments.length); 
-      return User.create(users);
     })
     .catch( (err) => console.log('Error connecting to Mongo', err));
 
