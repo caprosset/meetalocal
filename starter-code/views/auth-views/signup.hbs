@@ -46,24 +46,40 @@
 
     <div class="inputs">
       <label for=''>Topic of interest</label>
-      <input type='text' name='topicsOfInterest' required>
+        <select name="topicsOfInterest">
+        <option value="Travel tips">Travel tips</option>
+        <option value="Food">Food</option>
+        <option value="Professional">Professional</option>
+        <option value="Technology">Technology</option>
+        <option value="LGTBI">LGTBI</option>
+        <option value="Cultural codes">Cultural codes</option>
+        <option value="Administration">Administration</option>
+      </select>
     </div>
 
-     <div class="inputs">
+    <div class="inputs">
       <label for=''>Topic of expertise</label>
-      <input type='text' name='topicsOfExpertise' required>
+      <select name="topicsOfExpertise">
+        <option value="Travel tips">Travel tips</option>
+        <option value="Food">Food</option>
+        <option value="Professional">Professional</option>
+        <option value="Technology">Technology</option>
+        <option value="LGTBI">LGTBI</option>
+        <option value="Cultural codes">Cultural codes</option>
+        <option value="Administration">Administration</option>
+      </select>
     </div>
 
-      <div class="inputs">
+    <div class="inputs">
       <label for=''>Upload pic</label>
       <input type='text' name='profilePic' required>
     </div>
 
-     <div class="inputs">
+    <div class="inputs">
       <label for=''>Description</label>
-      <input type='text' name='description' required>
+      {{!-- <input type='text' name='description' required> --}}
+      <textarea name="description" cols="40" rows="5" required>Enter text here...</textarea>
     </div>
-
 
     <button type='submit'>Submit</button>
 
