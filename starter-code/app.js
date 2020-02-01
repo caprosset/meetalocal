@@ -8,6 +8,8 @@ const favicon      = require('serve-favicon');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const hbs = require('hbs');
+const registerHelpers = require('./loaders/hbs')
 
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
@@ -32,6 +34,9 @@ mongoose.connect('mongodb://localhost:27017/basic-auth-lab', {
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+// HBS helpers
+registerHelpers(hbs);
 
 // Middleware Setup
 app.use(logger('dev'));
