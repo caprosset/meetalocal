@@ -8,10 +8,11 @@ const userSchema = new Schema({
   surname: String,
   countryOfOrigin: String,
   age: Number,
+  occupation: String,
   countryOfInterest: String,
-  topicsOfInterest: String,
-  topicsOfExpertise: String,
-  profilePic: String,
+  topicsOfInterest: {type: Array},
+  topicsOfExpertise: {type: Array},
+  profilePic: String, 
   description: String
 });
 
