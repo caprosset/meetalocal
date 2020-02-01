@@ -3,12 +3,12 @@ const User = require('./../models/User');
 
 users = [
   { 
-    username: 'robert',
+    username: 'shaza',
     password: '123',
-    name: 'Robert',
-    surname: 'E. Lee',
-    countryOfOrigin: 'Romania',
-    age: 25,
+    name: 'Shaza',
+    surname: '',
+    countryOfOrigin: 'Morocco',
+    age: 40,
     occupation: 'UX designer',
     countryOfInterest: 'Gambia',
     topicsOfInterest: 'Travel tips',
