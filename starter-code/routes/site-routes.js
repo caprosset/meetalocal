@@ -5,8 +5,9 @@ var router = express.Router();
 // PRE ROUTE MIDDLEWARE - check if user has authenticated cookie
 
 router.use((req, res, next) => {
+  console.log(req.session.currentUser, 'usuario session?');
   if (req.session.currentUser) { // <== if there's user in the session (user is logged in)
-    next(); // ==> go to the next route ---
+  next(); // ==> go to the next route ---
   } 																//		|
   else {                          	//    |
   	res.redirect("/login");       	//    |
@@ -17,7 +18,10 @@ router.use((req, res, next) => {
 //     V
 
 router.get("/main", (req, res, next) => {
-  res.render("main");
+  
+  const currentUserData = req.session.currentUser;
+    console.log(currentUserData, 'hola');
+  res.render("main", {currentUserData});
 });
 
 router.get("/private", (req, res, next) => {

@@ -3,7 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #646AFF; }
 
 /*# sourceMappingURL=style.css.map */
 
@@ -15,6 +15,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+input {
+  border:none;
+  border-bottom: solid 1px #646AFF;
 }
 
 .inputs {
@@ -30,11 +35,19 @@ form {
 }
 
 #form label {
-  color: #666;
+  background-color:  #646AFF;
   display: inline-block;
   margin-bottom: 10px;
   text-align: center;
   width: 100%;
+}
+
+.match-btn {
+  background-color:  #646AFF;
+  color: white;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 #form input,
