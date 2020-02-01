@@ -11,8 +11,8 @@ users = [
     age: 25,
     occupation: 'UX designer',
     countryOfInterest: 'Gambia',
-    topicsOfInterest: ['Travel tips', 'Food'],
-    topicsOfExpertise: ['Cultural codes', 'Tech'],
+    topicsOfInterest: 'Travel tips',
+    topicsOfExpertise: 'Technology',
     profilePic: String, 
     description: 'I am traveling to Nigeria in April 2020'
   },
@@ -25,8 +25,8 @@ users = [
     age: 25,
     occupation: 'Legal advisor',
     countryOfInterest: 'Senegal',
-    topicsOfInterest: ['Travel tips', 'Food'],
-    topicsOfExpertise: ['Professional', 'Tech'],
+    topicsOfInterest: 'Travel tips',
+    topicsOfExpertise: 'Professional',
     profilePic: String, 
     description: 'I am traveling to Venezuela this year'
   },
@@ -39,8 +39,8 @@ users = [
     age: 25,
     occupation: 'Marketing manager',
     countryOfInterest: 'Taiwan',
-    topicsOfInterest: ['Travel tips', 'Food'],
-    topicsOfExpertise: ['Administration', 'Tech'],
+    topicsOfInterest: 'Food',
+    topicsOfExpertise: 'Professional',
     profilePic: String, 
     description: ''
   },
@@ -53,8 +53,8 @@ users = [
     age: 33,
     occupation: 'Web developer',
     countryOfInterest: 'Ukrania',
-    topicsOfInterest: ['Travel tips', 'Food'],
-    topicsOfExpertise: ['Professional', 'Tech'],
+    topicsOfInterest: 'Cultural codes',
+    topicsOfExpertise: 'Professional',
     profilePic: '', 
     description: ''
   },
@@ -67,8 +67,8 @@ users = [
     age: 32,
     occupation: 'Web developer',
     countryOfInterest: 'Bolivia',
-    topicsOfInterest: ['Travel tips', 'Food'],
-    topicsOfExpertise: ['Professional', 'Tech'],
+    topicsOfInterest: 'Travel tips',
+    topicsOfExpertise: 'Cultural codes',
     profilePic: '', 
     description: ''
   },
@@ -81,8 +81,8 @@ users = [
     age: 25,
     occupation: 'Actriz',
     countryOfInterest: '',
-    topicsOfInterest: ['Cultural codes', 'Food'],
-    topicsOfExpertise: ['Travel tips', 'Food'],
+    topicsOfInterest: 'Professional',
+    topicsOfExpertise: 'Food',
     profilePic: '', 
     description: ''
   },
@@ -95,8 +95,8 @@ users = [
     age: 25,
     occupation: 'Nurse',
     countryOfInterest: '',
-    topicsOfInterest: ['Cultural codes', 'Health'],
-    topicsOfExpertise: ['Travel tips', 'Food'],
+    topicsOfInterest: 'Cultural codes',
+    topicsOfExpertise: 'Travel tips',
     profilePic: '', 
     description: ''
   },
@@ -109,8 +109,8 @@ users = [
     age: 37,
     occupation: 'Footballer',
     countryOfInterest: '',
-    topicsOfInterest: ['Cultural codes', 'LGTBI'],
-    topicsOfExpertise: ['Travel tips', 'Cultural codes', 'Food'],
+    topicsOfInterest: 'Technology',
+    topicsOfExpertise: 'Travel tips',
     profilePic: '', 
     description: ''
   },
@@ -123,8 +123,8 @@ users = [
     age: 44,
     occupation: 'Pescador',
     countryOfInterest: '',
-    topicsOfInterest: ['Cultural codes', 'Professional'],
-    topicsOfExpertise: ['Travel tips', 'Cultural codes', 'Food'],
+    topicsOfInterest: 'Professional',
+    topicsOfExpertise: 'Travel tips',
     profilePic: '', 
     description: ''
   }

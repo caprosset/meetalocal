@@ -10,8 +10,8 @@ const userSchema = new Schema({
   age: Number,
   occupation: String,
   countryOfInterest: String,
-  topicsOfInterest: {type: Array},
-  topicsOfExpertise: {type: Array},
+  topicsOfInterest: String,
+  topicsOfExpertise: String,
   profilePic: String, 
   description: String
 });
