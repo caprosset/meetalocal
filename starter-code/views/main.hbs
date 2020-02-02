@@ -1,4 +1,46 @@
-<h1>MAIN</h1>
-<p>See also <a href="/private">Private</a></p>
+<h1>Profile</h1>
+{{!-- <p>See <a href="/private">matching users</a></p> --}}
 <p><a href="/logout">Logout</a></p>
-<img src="https://animaltoday.net/wp-content/uploads/2019/04/Funny-Cat-Videos1.jpg" alt="Funny cat pic">
+
+
+<div class="profile-info">
+
+  <div class="container">
+    <img src="{{currentUserData.profilePic}}" class="rounded-circle" width="300"/>
+  </div>
+</div>
+
+<div class="container">
+  <form action="/edit-profile" method="POST">
+    <label class="profile-details-label" for="fullName"></label>
+    <input type="text" name='fullName' value='{{currentUserData.name}} {{currentUserData.surname}}'>
+    </br>
+    </br>
+    <label for="topics of interest"></label>
+    <input type="text" name='description' value='{{currentUserData.description}}'>
+
+</br>
+    </br>
+    <label for="Country of Interest">Country of Interest:</label>
+    </br>
+    <input type="text" name='countryOfInterest' value='{{currentUserData.countryOfInterest}}'>
+
+  </br>
+    </br>
+    <label for="topics of expertise">Topics of expertise:</label>
+    </br>
+    <input type="text" name='topicsOfExpertise' value='{{currentUserData.topicsOfExpertise}}'>
+
+     </br>
+    </br>
+    <label for="topics of interest">Topics of interest:</label>
+    </br>
+    <input type="text" name='topicsOfInterest' value='{{currentUserData.topicsOfInterest}}'>
+
+  </br>
+  <input class="match-btn" type="button" onclick="window.location.href = 'http://localhost:3000/private';" value="See matching profiles"/>
+
+</form>
+
+</div>
+</div>

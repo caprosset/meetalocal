@@ -1,4 +1,20 @@
-<h1>PRIVATE</h1>
-<p>See also <a href="/main">main</a></p>
+<h1>Connect</h1>
+<p>See my <a href="/main">profile</a></p>
 <p><a href="/logout">Logout</a></p>
-<img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Cat gif">
+
+
+
+{{#each allUsersfromDB}}
+  {{#ifeq this.countryOfOrigin ../userInfo.countryOfInterest}}
+  <div class="card" style="width: 18rem;">
+    <img src="{{this.profilePic}}" class="card-img-top" alt="">
+    <div class="card-body justify-content-center ">
+      <h5 class="card-title">{{this.name}} {{this.surname}}</h5>
+      <p class="card-text">Country of origin: {{this.countryOfOrigin}}</p>
+      <p class="card-text">Topics of interest: {{this.topicsOfInterest}}</p>
+      <p class="card-text">Topics of expertise: {{this.topicsOfExpertise}}</p>
+      <a href="#" class="btn match-btn">Contact him</a>
+    </div>
+  </div>
+  {{/ifeq}}
+{{/each}}

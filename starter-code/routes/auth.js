@@ -87,15 +87,15 @@ router.post('/login', (req, res, next) => {
       }
 
       // If username exists - check if the password is correct
-      const hashedPasswordFromDB = userData.password; 
+      // const hashedPasswordFromDB = userData.password; 
 
-      const passwordCorrect = bcrypt.compareSync(
-        enteredPassword,
-        hashedPasswordFromDB,
-      );
+      // const passwordCorrect = bcrypt.compareSync(
+      //   enteredPassword,
+      //   hashedPasswordFromDB,
+      // );
 
       // If password is correct - create session (& cookie) and redirect
-      if (passwordCorrect) {
+      if (enteredPassword === userData.password) {
         // Save the login in the session ( and create cookie )
         // And redirect the user
         req.session.currentUser = userData;
