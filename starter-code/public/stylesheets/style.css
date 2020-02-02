@@ -3,18 +3,23 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #646AFF; }
 
 /*# sourceMappingURL=style.css.map */
 
 /* public/stylesheet/style.css */
 
 .container {
-  width: 30%;
+  /* width: 30%; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+input {
+  border:none;
+  border-bottom: solid 1px #646AFF;
 }
 
 .inputs {
@@ -25,16 +30,24 @@ a {
 }
 
 form {
-  margin: 30px auto;
-  width: 380px;
+  /* margin: 30px auto; */
+  /* width: 380px; */
 }
 
 #form label {
-  color: #666;
+  background-color:  #646AFF;
   display: inline-block;
   margin-bottom: 10px;
   text-align: center;
   width: 100%;
+}
+
+.match-btn {
+  background-color:  #646AFF;
+  color: white;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #form input,
@@ -75,4 +88,16 @@ button:hover {
   margin: 20px auto;
   padding: 20px;
   width: 100%;
+}
+
+.form-group {
+  margin-top: 40px;
+}
+
+.account-message {
+  margin-top: 10px;
+}
+
+.card {
+  margin-bottom: 20px;
 }
