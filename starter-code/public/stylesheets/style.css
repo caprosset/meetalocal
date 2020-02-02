@@ -1,6 +1,13 @@
+* {
+  background-color: white;
+}
+
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  background-color: none;
+}
 
 a {
   color: #646AFF; }
